@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Force-Tracker",
+    "description": "Note taking at instance ",
+    "version": "0.0.1",
+    "content_scripts" : [
+      {   
+          "matches" : [
+              "<all_urls>"
+          ],
+          "js": ["script.js"]
+     }
+  ],
+    "browser_action": {
+      "default_icon": "newLogo.png",
+      "default_popup": "homePage.html"
+    },
+    "permissions": ["activeTab"]
+    
+}

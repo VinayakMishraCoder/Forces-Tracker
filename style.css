@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bgColor: #EFF3F6;
+    --cardBgColor: #fff;
+    --textColor: #5379FE;
+    --accentColor: #FF5996;
+    --lighterColor: #9b9b9b;
+
+}
+
+.user-img{
+    background-color:bisque ;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+.outer-box{
+    background-color: var(--bgColor);
+    padding: 10px;
+    min-height: 450px;
+    overflow: auto;
+    width: 380px;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#input-field{
+    height: 2rem;
+    width: 11rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--cardBgColor);
+    border: 1px solid var(--lighterColor);
+    border-radius: 20px;
+    margin: 1rem 0 1rem 0;
+}
+
+button{
+    height: 2rem;
+    padding: 0.1rem 1rem;
+    background-color: var(--textColor);
+    color: var(--cardBgColor);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: #4e70eb;
+    color: var(--bgColor);
+}
+
+button:active{
+    background-color: #FF5996;
+    transition: 50ms;
+}
+
+
+.card{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--cardBgColor);
+    margin-bottom: 10px;
+}
+
+
+.title-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user-info-section{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+    justify-content: center;   
+}
+
+.user-img-div{
+    display: flex;
+    margin-right: 10px;
+}
+
+.name-section{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+
+}
+
+.name{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.user-name{
+    color: var(--lighterColor);
+}
+
+
+.bin-icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bin-icon img{
+    height: 20px;
+    width: 20px;
+
+}
+
+.bin-icon:hover{
+    background-color: var(--bgColor);
+    
+}
+
+
+.ratings-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rating-div{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: 1px var(--textColor) solid;
+    color: var(--textColor);
+    background-color: #5378fe10;
+}
+
+.new-rating{
+    border-radius: 20px ;
+    border: 1px var(--accentColor) solid;
+    background-color: #FF599610;
+    color: var(--accentColor)
+}
+
+
+.rating-score{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+p{
+    font-size: 11px;
+}
